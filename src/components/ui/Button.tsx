@@ -13,7 +13,7 @@ interface BaseProps {
   size?: Size;
   arrow?: boolean;
   className?: string;
-  children: ReactNode;
+  children?: ReactNode;
 }
 
 const variantClass: Record<Variant, string> = {
