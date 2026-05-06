@@ -7,24 +7,28 @@
 /* Sin glows coloreados. Sin saturaciones startup. Solo disciplina.   */
 @layer base {
   :root {
-    --bg: 250 251 252;
+    /* Fondos: tinte muy suave azul-frío para que cards blancos resalten. */
+    --bg: 247 249 252;
     --bg-elev: 255 255 255;
-    --surface: 244 246 248;
-    --surface-2: 236 239 243;
+    --surface: 240 244 250;
+    --surface-2: 228 234 244;
     --border: 15 23 42 / 0.08;
     --border-strong: 15 23 42 / 0.14;
-    --fg: 20 24 33;
-    --fg-muted: 82 92 107;
-    --fg-subtle: 111 120 134;
-    --fg-disabled: 154 163 178;
-    --accent: 36 51 82;
-    --accent-hover: 24 37 66;
-    --accent-2: 15 26 51;
-    --accent-soft: 226 231 241;
-    --glow: 36 51 82 / 0.06;
-    --success: 20 118 75;
-    --warning: 166 120 30;
-    --danger: 165 58 58;
+    /* Tipografía: slate profundo (más legible que el negro puro). */
+    --fg: 15 23 42;
+    --fg-muted: 71 85 105;
+    --fg-subtle: 100 116 139;
+    --fg-disabled: 148 163 184;
+    /* Acento primario: azul corporativo saturado pero sin caer en startup. */
+    --accent: 37 99 235;
+    --accent-hover: 29 78 216;
+    /* Acento secundario: cian/teal frío — ahora los gradientes SÍ se notan. */
+    --accent-2: 14 165 233;
+    --accent-soft: 219 234 254;
+    --glow: 37 99 235 / 0.10;
+    --success: 22 163 74;
+    --warning: 202 138 4;
+    --danger: 220 38 38;
     --shadow-xs: 0 1px 2px 0 rgb(15 23 42 / 0.04);
     --shadow-sm: 0 1px 3px 0 rgb(15 23 42 / 0.05),
                  0 1px 2px -1px rgb(15 23 42 / 0.04);
@@ -37,24 +41,27 @@
   }
 
   .dark {
-    --bg: 11 14 20;
-    --bg-elev: 17 21 29;
-    --surface: 24 29 39;
-    --surface-2: 35 41 50;
-    --border: 255 255 255 / 0.06;
-    --border-strong: 255 255 255 / 0.10;
-    --fg: 226 230 236;
-    --fg-muted: 154 163 178;
-    --fg-subtle: 111 120 134;
-    --fg-disabled: 82 92 107;
-    --accent: 100 120 160;
-    --accent-hover: 148 162 192;
-    --accent-2: 36 51 82;
-    --accent-soft: 36 51 82 / 0.30;
-    --glow: 100 120 160 / 0.10;
-    --success: 95 184 142;
-    --warning: 207 167 90;
-    --danger: 200 110 110;
+    /* Fondos: azul-noche profundo para que el azul brillante destaque. */
+    --bg: 8 12 22;
+    --bg-elev: 15 20 32;
+    --surface: 24 30 45;
+    --surface-2: 35 43 60;
+    --border: 255 255 255 / 0.07;
+    --border-strong: 255 255 255 / 0.12;
+    --fg: 226 232 240;
+    --fg-muted: 148 163 184;
+    --fg-subtle: 100 116 139;
+    --fg-disabled: 71 85 105;
+    /* Acento primario: azul más brillante para que rinda sobre fondo dark. */
+    --accent: 96 165 250;
+    --accent-hover: 147 197 253;
+    /* Acento secundario: cian luminoso — gradiente con dirección clara. */
+    --accent-2: 34 211 238;
+    --accent-soft: 30 64 175 / 0.32;
+    --glow: 96 165 250 / 0.18;
+    --success: 74 222 128;
+    --warning: 250 204 21;
+    --danger: 248 113 113;
     --shadow-xs: 0 1px 2px 0 rgb(0 0 0 / 0.30);
     --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.35),
                  0 1px 2px -1px rgb(0 0 0 / 0.30);
